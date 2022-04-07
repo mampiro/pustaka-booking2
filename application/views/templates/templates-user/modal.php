@@ -35,6 +35,9 @@ dismiss="modal">Close</button>
 </div>
 </div>
 <!--/login modal -->
+
+
+
 <!-- daftar modal -->
 <div class="modal fade" tabindex="-1" id="daftarModal" role="dialog">
 <div class="modal-dialog" role="document">
