@@ -33,21 +33,21 @@
 									<input type="hidden" name="tgl_pengembalian" id="tgl_pengembalian" value="<?=date('Y-m-d'); ?>">
 								</td>
 								<td>
-								<?php
-								$tgl1 = new DateTime($p['tgl_kembali']);
-								$tgl2 = new DateTime();
-								if(date('Y-m-d')>$p['tgl_kembali'])
-								{
-									$selisih = $tgl2->diff($tgl1)->format("%a");
-								} 
-								else
-								{
-									$selisih = 0;
-								}
-								echo $selisih;
-								?> 
+									<?php
+									$tgl1 = new DateTime($p['tgl_kembali']);
+									$tgl2 = new DateTime();
+									if(date('Y-m-d')>$p['tgl_kembali'])
+									{
+										$selisih = $tgl2->diff($tgl1)->format("%a");
+									} 
+									else
+									{
+										$selisih = 0;
+									}
+									echo $selisih;
+									?> 
 
-								Hari
+									Hari
 								</td>
 								<td><?= $p['denda']; ?></td>
 									<?php if ($p['status'] == "Pinjam") 
